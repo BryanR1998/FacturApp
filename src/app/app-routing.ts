@@ -23,12 +23,12 @@ export const routes: Routes = [
   },
   {
     path: 'products',
-    // canActivate: [authGuard],
+    canActivate: [authGuard],
     loadChildren: () => import('./pages/products/products-routing').then((routes) => routes.ProductsRoutes)
   },
   {
     path: 'bill',
-    // canActivate: [authGuard],
+    canActivate: [authGuard],
     loadChildren: () => import('./pages/bill/bill-routing').then((routes) => routes.BillRoutes)
   }
 ];
