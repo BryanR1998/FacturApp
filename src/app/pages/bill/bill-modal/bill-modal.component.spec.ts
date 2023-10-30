@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ModalComponent } from './modal.component';
+import { BillModalComponent } from './bill-modal.component';
 
-describe('ModalComponent', () => {
-  let component: ModalComponent;
-  let fixture: ComponentFixture<ModalComponent>;
+describe('BillModalComponent', () => {
+  let component: BillModalComponent;
+  let fixture: ComponentFixture<BillModalComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ModalComponent]
+      imports: [BillModalComponent]
     });
-    fixture = TestBed.createComponent(ModalComponent);
+    fixture = TestBed.createComponent(BillModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "facturapp-f710c": {
+      "hosting": {
+        "FacturApp": [
+          "facturapp-f710c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "facturapp-f710c"
+  }
+}

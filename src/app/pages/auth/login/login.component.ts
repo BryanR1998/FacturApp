@@ -57,7 +57,10 @@ export default class LoginComponent {
     try {
       const userAccess = await this.authService.logInUser(access);
       console.log(userAccess);
-      Swal.fire('¡Inicio de sesión exitoso!', 'Has ingresado correctamente.', 'success')
+      Swal.fire(
+        '¡Inicio de sesión exitoso!',
+        'Has ingresado correctamente.',
+        'success')
       .then((result) => {
         if (result.isConfirmed) {
           // Redirige al usuario a la página deseada después del inicio de sesión

@@ -5,7 +5,7 @@ export const routes: Routes = [
   {
     path: '',
     canActivate: [authGuard],
-    loadComponent:() => import('./pages/home/home.component'),
+    loadComponent: () => import('./pages/home/home.component'),
   },
   {
     path: 'auth',
@@ -20,5 +20,15 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/auth/login/login.component')
       },
     ]
+  },
+  {
+    path: 'products',
+    // canActivate: [authGuard],
+    loadChildren: () => import('./pages/products/products-routing').then((routes) => routes.ProductsRoutes)
+  },
+  {
+    path: 'bill',
+    // canActivate: [authGuard],
+    loadChildren: () => import('./pages/bill/bill-routing').then((routes) => routes.BillRoutes)
   }
 ];
